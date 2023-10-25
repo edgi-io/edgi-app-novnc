@@ -1,0 +1,24 @@
+import { defineConfig } from 'vite'
+import { edgi } from './package.json';
+
+let config = defineConfig({
+  build: {
+    minify: false,
+    lib: {
+        entry: "src/index.ts",
+        name: 'EdgiVnc',
+        formats: ['es'],
+        fileName: (_fmt, f) => f,
+    },
+    rollupOptions: {
+      input: {
+        [`connect-vnc.js`]: "./src/connect-vnc.ts",
+      },
+      output: {
+        inlineDynamicImports: false,
+      },
+    },
+  },
+});
+
+export default config;

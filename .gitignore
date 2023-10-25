@@ -1,0 +1,10 @@
+dist/
+build/
+node_modules/
+.emsdk/
+**/packages/*/{build,dist,node_modules}/
+pnpm-exec-summary.json
+**/.docker_home
+**/.vite-node
+**/.*.swp
+**/vite.config.ts.timestamp-*

@@ -1,0 +1,117 @@
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--edgi-color-pane-active-bg);
+    overflow: auto;
+}
+.conect .title {
+    padding-bottom: 10px;
+}
+.connect .title label {
+    margin-right: 20px;
+}
+.connect .toolbar {
+    display: flex;
+    justify-content: center;
+    min-width: 90%;
+    padding: 10px;
+    padding-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+.connect .toolbar * {
+    padding: 2px;
+    margin: 2px;
+}
+.connect .toolbar label {
+    margin-right: 6px;
+}
+.connect .toolbar select {
+    min-width: 160px;
+}
+.connect .toolbar button {
+    margin-right: 10px;
+    padding: 0 8px;
+}
+.connect .login {
+    min-width: 90%;
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    margin-block-end: 0;
+}
+.connect .login * {
+    margin: 2px;
+    margin-bottom: auto;
+    padding: 2px;
+}
+.connect .login label {
+    margin-right: 4px;
+}
+.connect .login button {
+    padding: 4px 8px;
+    justify-self: start;
+    margin: 10px 0;
+    margin-top: auto;
+}
+.connect .login button.login-button {
+    margin-top: 10px;
+    font-size: 1.05rem;
+    min-height: 30px;
+}
+.connect .advanced {
+    min-width: 90%;
+}
+.connect .forwards .header {
+    grid-area: header;
+    margin-top: 6px;
+}
+.connect .error {
+    outline: 1px solid rgba(255,0,0,0.5);
+    outline-offset: -2px;
+}
+.connect .forwards {
+    margin-bottom: 10px;
+    padding: 4px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-row-gap: 4px;
+    grid-column-gap: 2px;
+    grid-template-columns: 2fr 6fr 1fr 1fr;
+    grid-template-areas: "header header header header";
+    font-size: 0.8rem;
+}
+.connect .forwards * {
+    padding: 2px;
+}
+.connect .forwards .remove {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 7px;
+    text-align: center;
+    align-self: center;
+    justify-self: end;
+}
+.connect .misc * {
+    padding: 2px;
+}
+.connect .misc {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 1fr;
+    grid-row-gap: 4px;
+    grid-column-gap: 2px;
+    align-items: center;
+}
+/*
+.explorer-tree {
+    width: 300px;
+    position: relative;
+}*/
