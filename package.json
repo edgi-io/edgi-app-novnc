@@ -1,6 +1,6 @@
 {
   "name": "@edgi-app/novnc",
-  "version": "1.3.0-fix2",
+  "version": "1.3.0-fix3",
   "description": "An HTML5 VNC client",
   "publishConfig": {
     "access": "public"
